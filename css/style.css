@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10% 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container>div {
+    float: left;
+    width: 33%;
+    height: auto;
+
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    border: solid 3px #000;
+    margin: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(185, 185, 185);
+}
+
+.name {
+    position: absolute;
+    min-height: 25%;
+    min-width: 25%;
+    right: -3px;
+    top: -3px;
+    border: solid 3px black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.name-1 {
+    background: rgb(255, 233, 185);
+}
+
+.name-2 {
+    background-color: rgb(255, 164, 164);
+}
+
+.name-3 {
+    background-color: rgb(255, 205, 185);
+}
+
+.content__text {
+    padding: 30px 20px 10px 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    div.container>div:first-child {
+        float: left;
+        width: 50%;
+        height: auto;
+        margin-bottom: 30px;
+
+    }
+
+    div.container>div:nth-child(2) {
+        float: left;
+        width: 50%;
+        height: auto;
+        margin-bottom: 30px;
+
+    }
+
+    div.container>div:last-child {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    div.container>div {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
